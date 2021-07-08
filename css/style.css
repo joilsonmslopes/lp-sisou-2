@@ -55,7 +55,7 @@ html {
 /* Sample HTML */
 #moduleBanner {
   width: 100%;
-  background: url(../../imgs/bg.png);
+  background: url("../../imgs/bg.png");
   background-size: 100% 100%;
   background-position: center top;
   background-repeat: no-repeat;
@@ -655,7 +655,7 @@ html {
 
 #moduleFooter {
   width: 100%;
-  background: url(../../imgs/bgFoooter.png);
+  background: url("../../imgs/bgFoooter.png");
   background-size: 100% 100%;
   background-position: center top;
   background-repeat: no-repeat;
