@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
 	<meta charset="UTF-8" />
@@ -24,7 +24,7 @@
 	<meta name="twitter:title" content="e-Book" />
 	<meta name="twitter:description" content="e conheça o lado bom que esse momento difícil nos proporcionou." />
 	<meta name="twitter:url" content="" />
-	<meta name="twitter:image" content="./imgs/screenshot-e-Book.png" />
+	<meta name="twitter:image" content="imgs/screenshot-e-Book.png" />
 	<meta name="twitter:card" content="summary" />
 
 	<link rel="canonical" href="" />
@@ -43,11 +43,10 @@
 				<h2>Receba em seu e-mail hoje mesmo o e-book</h2>
 				<h1>“O que a pandemia <span>nos fez pensar</span>”</h1>
 				<p>e conheça o lado bom que esse momento difícil nos proporcionou.</p>
-				<a class="btn" href="#">RECEBER MINHA CÓPIA GRÁTIS</a>
 			</div>
 			<div class="content-img">
 				<div>
-					<img src="imgs/ebook.png" alt="Ebook">
+					<img src="imgs/e-book-2.svg" alt="Ebook">
 				</div>
 			</div>
 		</div>
@@ -55,10 +54,69 @@
 
 	<section id="moduleFeature">
 		<div class="container">
+			<form id="lead" method="POST" action="index.php" data-ajax="false">
+				<input type="hidden" name="page" value="marca_view_email" />
+				<input type="hidden" name="origem" value="##ORIGEM##" />
+				<input type="hidden" name="enviaEmail" value="1" />
+				<input type="hidden" name="pgObrigado" value="obrigado" />
+  
+				<div class="input-group-wrap">
+					<div class="input-group">
+						<label for="name">Qual o seu nome?</label>
+						<input
+						type="text"
+						valeu="Name"
+						id="name"
+						name="name"
+						required
+						/>
+					</div>
+					<div class="input-group email">
+						<label for="email">Digite seu melhor e-mail</label>
+						<input
+							type="email"
+							valeu="email"
+							name="email"
+							id="email"
+							required
+						/>
+					</div>
+					<button type="submit" class="btn">Receber minha cópia grátis</button>
+				</div>
+				<div class="input-group-wrap">
+					<div class="custom-control">
+					  <input
+						type="checkbox"
+						name="envia_email_produto"
+						class="custom-control-input"
+						id="exclusivo_eumequerobem"
+						checked
+					  />
+					  <label
+						class="custom-control-label font-weight-bold"
+						for="exclusivo_eumequerobem"
+						>Desejo receber conteúdos exclusivos da Eu Me Quero Bem</label
+					  >
+					</div>
+					<div class="custom-control">
+						<input 
+							type="checkbox" 
+							class="custom-control-input" 
+							name="termos" 
+							id="terms"
+							checked 
+							required>
+						<label 
+							class="mb-0" 
+							for="terms">Li e Aceito os <a href="?page=navega&pg=termos" target="_blank">Termos de Uso</a>
+						</label>    
+					  </div>
+				</div>
+			  </form>
 			<div class="content-text">
-				<h2>Cada detalhe desse e-book foi pensado exclusivamente para te deixar atualizado sobre <span>as
-						mudanças do
-						“novo mundo”</span>.</h2>
+				<h2>Cada detalhe desse e-book foi pensado exclusivamente para te deixar atualizado sobre
+					<span>as mudanças do “novo mundo”</span>.
+				</h2>
 			</div>
 		</div>
 	</section>
@@ -86,8 +144,7 @@
 	<section id="moduleBenefits-1">
 		<div class="container">
 			<div class="info">
-				<h2>Conheça os pontos positivos da pandemia Covid-19 para tirar o melhor proveito dela e não sofrer com
-					a crise.</h2>
+				<h2>Conheça os pontos positivos da pandemia Covid-19 para tirar o melhor proveito dela e não sofrer com a crise.</h2>
 			</div>
 
 			<div class="info">
@@ -107,20 +164,21 @@
 			</div>
 
 			<div class="info">
-				<h2>O aumento explosivo do uso de aplicativos durante a pandemia, como sendo uma forte tendência
-					atualmente.</h2>
+				<h2>O aumento explosivo do uso de aplicativos durante a pandemia, como sendo uma forte tendência atualmente.</h2>
 			</div>
 		</div>
 	</section>
 
 	<footer id="moduleFooter">
 		<div class="container">
-			<div class="content-text">
+			<div class="content-text menu-item">
 				<h2>Dê o primeiro passo para <span>conhecer o seu novo futuro!</span></h2>
-				<a href="#" class="btn">RECEBER MEU E-BOOK</a>
+				<a href="#moduleFeature" class="btn">RECEBER MEU E-BOOK</a>
 			</div>
 		</div>
 	</footer>
+
+	<script src="js/main.js"></script>
 </body>
 
 </html>

@@ -29,22 +29,22 @@ html {
 
 /* 3 - Components */
 .btn {
+  width: 100%;
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 28px;
-  line-height: 34.13px;
   text-decoration: none;
-  color: #ffffff;
-  background: #D24093;
-  padding: 10px 40px;
-  border-radius: 7px;
+  color: #141D44;
+  background: #FCFC88;
+  padding: 10px 30px;
+  border-radius: 20px;
   display: table;
-  border: 2px solid #D24093;
+  border: 2px solid #FCFC88;
   -webkit-transition: -webkit-filter 0.2s;
   transition: -webkit-filter 0.2s;
   transition: filter 0.2s;
   transition: filter 0.2s, -webkit-filter 0.2s;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -75,6 +75,7 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 60px 80px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -83,13 +84,13 @@ html {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 30px 60px 0px;
+    padding: 40px 60;
   }
 }
 
 @media only screen and (max-width: 576px) {
   #moduleBanner .container {
-    padding: 30px 5% 0px;
+    padding: 40px 5%;
   }
 }
 
@@ -127,6 +128,13 @@ html {
   color: #86C2B8;
 }
 
+@media only screen and (max-width: 992px) {
+  #moduleBanner .content-text h2 {
+    font-size: 23px;
+    line-height: 29.48px;
+  }
+}
+
 @media only screen and (max-width: 769px) {
   #moduleBanner .content-text h2 {
     font-size: 22px;
@@ -149,6 +157,13 @@ html {
   color: #FFFFFF;
   font-family: 'Montserrat', sans-serif;
   margin-top: 25px;
+}
+
+@media only screen and (max-width: 992px) {
+  #moduleBanner .content-text h1 {
+    font-size: 48px;
+    line-height: 58.48px;
+  }
 }
 
 @media only screen and (max-width: 769px) {
@@ -194,31 +209,6 @@ html {
   }
 }
 
-#moduleBanner .content-text a {
-  margin-top: 60px;
-}
-
-@media only screen and (max-width: 1024px) {
-  #moduleBanner .content-text a {
-    font-size: 18px;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  #moduleBanner .content-text a {
-    font-size: 20px;
-    line-height: 28.48px;
-  }
-}
-
-@media only screen and (max-width: 576px) {
-  #moduleBanner .content-text a {
-    font-size: 15px;
-    line-height: 24.48px;
-    padding: 10px 16px;
-  }
-}
-
 #moduleBanner .content-img {
   width: 50%;
   display: -webkit-box;
@@ -237,12 +227,12 @@ html {
 }
 
 #moduleBanner .content-img > div {
-  max-width: 280px;
+  max-width: 300px;
 }
 
 @media only screen and (max-width: 576px) {
   #moduleBanner .content-img > div {
-    max-width: 200px;
+    min-width: 200px;
   }
 }
 
@@ -627,9 +617,144 @@ html {
   }
 }
 
+#moduleFeature form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#moduleFeature .input-group-wrap {
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+@media only screen and (max-width: 768px) {
+  #moduleFeature .input-group-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+#moduleFeature .input-group-wrap .input-group label {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  margin-bottom: 20px;
+  display: block;
+  font-size: 20px;
+}
+
+#moduleFeature .input-group-wrap .input-group {
+  width: 100%;
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  #moduleFeature .input-group-wrap .input-group {
+    max-width: 370px;
+    margin-top: 16px;
+    margin-right: 0px;
+  }
+}
+
+#moduleFeature .input-group-wrap .input-group input {
+  width: 100%;
+  max-width: 370px;
+  height: 40px;
+  padding: 0px 10px;
+}
+
+#moduleFeature .input-group-wrap button.btn {
+  max-width: 340px;
+  font-size: 19px;
+  line-height: 24.13px;
+}
+
+@media only screen and (max-width: 1100px) {
+  #moduleFeature .input-group-wrap button.btn {
+    font-size: 15px;
+    line-height: 22.48px;
+    padding: 10px 5px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  #moduleFeature .input-group-wrap button.btn {
+    font-size: 14px;
+    line-height: 22.48px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #moduleFeature .input-group-wrap button.btn {
+    margin-top: 32px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  #moduleFeature .input-group-wrap button.btn {
+    font-size: 15px;
+    line-height: 20.48px;
+    padding: 10px 16px;
+  }
+}
+
+#moduleFeature .input-group-wrap + .input-group-wrap {
+  margin: 8px 0px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+@media only screen and (max-width: 768px) {
+  #moduleFeature .input-group-wrap + .input-group-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+#moduleFeature .input-group-wrap + .input-group-wrap .custom-control {
+  margin-top: 16px;
+}
+
+#moduleFeature .input-group-wrap + .input-group-wrap .custom-control label {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+}
+
+#moduleFeature .input-group-wrap + .input-group-wrap .custom-control label a {
+  color: #fff;
+}
+
 #moduleFeature .content-text {
   max-width: 1100px;
-  margin: 0 auto;
+  margin: 30px auto 0px;
 }
 
 #moduleFeature .content-text h2 {
@@ -721,25 +846,35 @@ html {
   font-weight: 700;
 }
 
-#moduleFooter .content-text a {
+#moduleFooter .content-text a.btn {
   margin-top: 45px;
+  max-width: 460px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 28px;
+  line-height: 34.13px;
+  text-transform: uppercase;
 }
 
 @media only screen and (max-width: 1024px) {
-  #moduleFooter .content-text a {
+  #moduleFooter .content-text a.btn {
     font-size: 22px;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  #moduleFooter .content-text a {
+  #moduleFooter .content-text a.btn {
     font-size: 20px;
     line-height: 28.48px;
   }
 }
 
 @media only screen and (max-width: 576px) {
-  #moduleFooter .content-text a {
+  #moduleFooter .content-text a.btn {
     font-size: 15px;
     line-height: 24.48px;
     padding: 10px 16px;
